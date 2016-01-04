@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>54b64862-a7ff-479e-b735-e9686aa9a2b1</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>OvenControl.py</StartupFile>
+    <StartupFile>ReservoirManualControl.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,10 +22,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ReservoirManualControl.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="OvenClass.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="OvenControl.py" />
+    <Compile Include="testing.py" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
