@@ -1,3 +1,5 @@
+import serial
+
 class OvenClass(object):
     """This class implements the shared parameters for controlling our two oven heaters."""
 
@@ -13,7 +15,7 @@ class OvenClass(object):
     def read_setpoint(self):
         self.error=False
 
-    def write_setpoint(self):
+    def write_setpoint(self,setpoint):
         self.error=False
 
     def read_temperature(self):
