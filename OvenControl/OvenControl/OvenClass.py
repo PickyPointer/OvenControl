@@ -22,7 +22,7 @@ class OvenClass(object):
         self.open_connection()
         self.ser.write('*R01\r')
         self.read = self.ser.read(10)
-        self.read=int(self.read[6:],16) #processing, get rid of leading characters that don't matter, convert to int from hex
+        self.read=int(self.read[4:],16) #processing, get rid of leading characters that don't matter, convert to int from hex
         self.setpoint=float(self.read)/10 #convert the 4 digit int to a float and restore decimal place ie 2000 -> 200.0
         self.close_connection()
 

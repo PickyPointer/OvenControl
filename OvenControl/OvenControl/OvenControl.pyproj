@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>54b64862-a7ff-479e-b735-e9686aa9a2b1</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>ReservoirManualControl.py</StartupFile>
+    <StartupFile>test.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -34,7 +34,13 @@
     <Compile Include="OvenClass.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="test.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="testing.py" />
+    <Compile Include="messaging.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
